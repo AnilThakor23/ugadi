@@ -1,0 +1,57 @@
+@font-face {
+  font-family: noto;
+  src: url(./fonts/noto.ttf);
+}
+@font-face {
+  font-family: anton;
+  src: url(./fonts/anton.ttf);
+}
+.scrollbtn {
+  animation: bounceAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes bounceAnimation {
+  from {
+      transform: translateY(3px);
+  }
+  to {
+      transform: translateY(-7px);
+  }
+}
+
+
+body {
+  user-select: none;
+}
+.selectable{
+  user-select: text;
+}
+
+
+.page1 .spot-animation .part2{
+  animation-name: pg2GreatAnime2;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.page1 .spot-animation .part3{
+  animation-name: pg2GreatAnime3;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes pg2GreatAnime2 {
+  0% {transform: translate(-30%, 30%);}
+  100% {transform: translate(30%, -30%);}
+}
+@keyframes pg2GreatAnime3 {
+0% {transform: translate(-30%, -30%);}
+100% { transform: translate(30%, 30%);}
+}  
+
+
+.majorText span {
+  display: inline-block; 
+}
