@@ -70,6 +70,7 @@
   }
   
   
+   function page2 (){
     let elems = document.querySelectorAll(".page2 .elem");  
     elems.forEach((elem) => {
       let img = elem.querySelector("img")
@@ -137,7 +138,9 @@
         }
       })
     })
-  
+   }
+   
+  //  page2()
 
 
 
@@ -236,20 +239,20 @@ textanimation();
 
 
 
-let p1AboutBtn = document.querySelector(".page1 nav .aboutBtn")
+// let p1AboutBtn = document.querySelector(".page1 nav .aboutBtn")
 let p1ContactBtn = document.querySelector(".page1 nav .contactBtn")
 
-let d1 = document.querySelector(".page2").getBoundingClientRect().top ;
+// let d1 = document.querySelector(".page2").getBoundingClientRect().top ;
 let d2 = document.querySelector(".page3 .end").getBoundingClientRect().top ;
-p1AboutBtn.addEventListener("click",()=>{
-  gsap.to(window, {
-    duration: 1.5,
-    scrollTo: d1,
-});
-})
+// p1AboutBtn.addEventListener("click",()=>{
+//   gsap.to(window, {
+//     duration: 1.5,
+//     scrollTo: d1,
+// });
+// })
 p1ContactBtn.addEventListener("click",()=>{
   gsap.to(window, {
     duration: 1.5,
-    scrollTo: d2 + 1000,
+    scrollTo: d2 + 1500,
 });
 })
